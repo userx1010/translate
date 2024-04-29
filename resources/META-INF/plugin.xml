@@ -1,0 +1,36 @@
+<idea-plugin>
+  <id>com.xtf</id>
+  <name>Translate-X</name>
+  <version>1.0</version>
+  <vendor email="2267076673@qq.com" url="http://www.123.com">Xtf</vendor>
+
+  <description><![CDATA[
+     This is translate plugin,His function is to translate from English to Chinese
+    ]]></description>
+
+  <change-notes><![CDATA[
+      https://github.com/userx1010/translate.git
+    ]]>
+  </change-notes>
+
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/build-number-ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="translate" class="com.xtf.actions.translate_x" text="translate_x"
+            description="This is translate plugin" icon="/icons/picon.png">
+      <add-to-group group-id="MainToolBar" anchor="first"/>
+      <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+    </action>
+  </actions>
+
+</idea-plugin>
